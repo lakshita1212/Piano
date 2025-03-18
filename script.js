@@ -1,16 +1,25 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 
 const songs = {
-    "Twinkle Twinkle": ["a", "a", "g", "g", "f", "f", "g", "e", "e", "d", "d", "c", "c"],
-    "Mary Had a Little Lamb": ["d", "s", "a", "s", "d", "d", "d", "s", "s", "s", "d", "g", "g"],
-    "Happy Birthday": ["a", "a", "s", "a", "f", "d", "a", "a", "s", "a", "g", "f"],
-    "Ode to Joy": ["f", "f", "g", "h", "h", "g", "f", "d", "d", "s", "s", "d", "f"],
-    "Jingle Bells": ["g", "g", "g", "g", "g", "g", "g", "d", "f", "f", "f", "d", "s"],
-    "Chopsticks": ["s", "s", "d", "d", "f", "f", "d", "d", "s", "s"],
-    "Für Elise": ["d", "s", "d", "s", "d", "j", "s", "g", "g", "d", "g", "d", "j"],
-    "Canon in D": ["s", "a", "j", "f", "g", "s", "j", "f", "g", "s", "a", "j", "g"],
-    "Let It Be": ["k", "d", "h", "f", "k", "d", "f", "k", "d", "f"],
-    "Hallelujah": ["k", "e", "s", "e", "k", "e", "h", "k", "h", "e", "f", "s", "e"]
+    "Twinkle Twinkle": ["a", "a", "g", "g", "h", "h", "g", "f", "f", "d", "d", "s", "s", "a",  
+                        "g", "g", "f", "f", "d", "d", "s",  
+                        "g", "g", "f", "f", "d", "d", "s",  
+                        "a", "a", "g", "g", "h", "h", "g",  
+                        "f", "f", "d", "d", "s", "s", "a"],
+    "Mary Had a Little Lamb": ["d", "s", "a", "s", "d", "d", "d", "s", "s", "s", "d", "g", "g",  
+                            "d", "s", "a", "s", "d", "d", "d", "d", "s", "s", "d", "s", "a"],
+    "Happy Birthday": ["a", "a", "s", "a", "f", "d",  
+                    "a", "a", "s", "a", "g", "f",  
+                    "a", "a", "k", "h", "f", "d",  
+                    "u", "u", "h", "f", "g", "f"],
+"Ode to Joy": ["f", "f", "g", "h", "h", "g", "f", "d", "d", "s", "s", "d", "f",  
+               "f", "g", "h", "h", "g", "f", "d", "d", "s", "s", "d"],
+
+    "Für Elise": [";", "p", ";", "p", ";", "j", "l", "k", "h",  
+                "k", ";", "h", "j", ";", "y", "j", "k",  
+                ";", ";", "p", ";", "p", ";", "j", "l", "k", "h",  
+                "k", ";", "h", "j", ";", "k", "j", "h"],
+
 };
 
 
