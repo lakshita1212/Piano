@@ -6,5 +6,3 @@ Virtual Piano Instructions
 
 
 
-    ![image](https://github.com/user-attachments/assets/b26ad05c-9638-46be-9eb7-2f9891116f21)
-
