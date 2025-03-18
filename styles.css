@@ -3,6 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 0 10px;
     background: lightblue;
 }
 
@@ -22,6 +23,7 @@ body{
 
 header h1{
     font-size: 1.6rem;
+    color: pink;
 }
 
 header .column{
@@ -36,6 +38,7 @@ header .column span{
 }
 
 .volume-slider input{
+    color: pink;
     outline: none;
     accent-color: #fff;
 }
@@ -90,6 +93,12 @@ header .column span{
     border-radius: 0 0 5px 5px;
     background: linear-gradient(#333,#000);
 }
+
+.piano-keys .black.active{
+    box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
+    background: linear-gradient(to bottom,#000, #434343);
+}
+
 .piano-keys .white{
     width: 70px;
     height: 230px;
@@ -98,9 +107,9 @@ header .column span{
     background: linear-gradient(#fff 96%,#eee 4%);
 }
 
-.piano-keys .white:active{
-    box-shadow: inset -5px 5px 20px rgba(255,255,255,0.1);
-    background: linear-gradient(to bottom,#000, #434343);
+.piano-keys .white.active{
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom,#fff 0%, #eee 100%);
 }
 
 .piano-keys span{
@@ -109,4 +118,79 @@ header .column span{
     width: 100%;
     font-size: 1.13rem;
     text-align: center;
+}
+
+.piano-keys .key.hide span {
+    display: none;
+}
+
+.key {
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.note {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 99, 174);
+    margin-bottom: 30px;
+}
+
+.key-label {
+    font-size: 14px;
+    color: gray;
+}
+
+.key.white .note {
+    font-size: 25px;
+}
+.key.black .note {
+    font-size: 25px;
+    color: rgb(240, 110, 208);
+}
+
+.key.black .key-label {
+    color: lightgray;
+}
+
+
+.key.highlight {
+    background-color: rgb(117, 200, 235) !important;
+    box-shadow: 0px 0px 20px 5px rgb(166, 166, 254);
+    transform: scale(1.1);
+}
+
+
+select {
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #4B4B4B;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+}
+
+select:hover,
+select:focus {
+    background-color: #8c8c8c;
+    outline: none;
 }

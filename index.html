@@ -13,36 +13,101 @@
             <h1>Virtual Piano</h1>
 
             <div class = "column volume-slider">
-                <span>Volume</span> <input type = "range">
+                <span>Volume</span> <input type = "range" min ="0" max = "1" value = "0.5" step = "any">
             </div>
 
             <div class = "column keys-checkbox">
-                <span>show Notes</span> <input type = "checkbox">
+                <span>Hide Notes</span> <input type = "checkbox">
             </div>
+            <select id="song-list">
+                <option value="">Select a song</option>
+                <option value="Twinkle Twinkle">Twinkle Twinkle</option>
+                <option value="Mary Had a Little Lamb">Mary Had a Little Lamb</option>
+                <option value="Happy Birthday">Happy Birthday</option>
+                <option value="Ode to Joy">Ode to Joy</option>
+                <option value="Jingle Bells">Jingle Bells</option>
+                <option value="Chopsticks">Chopsticks</option>
+                <option value="Für Elise">Für Elise</option>
+                <option value="Canon in D">Canon in D</option>
+                <option value="Let It Be">Let It Be</option>
+                <option value="Hallelujah">Hallelujah</option>
+            </select>
+            <button id="start-song">Start Lesson</button>
+                    
         </header>
 
 
         <ul class="piano-keys">
-            <li class = "key white"><span>a</span></li>
-            <li class = "key black"><span>w</span></li>
-            <li class = "key white"><span>s</span></li>
-            <li class = "key black"><span>e</span></li>
-            <li class = "key white"><span>d</span></li>
-            <li class = "key white"><span>f</span></li>
-            <li class = "key black"><span>t</span></li>
-            <li class = "key white"><span>g</span></li>
-            <li class = "key black"><span>y</span></li>
-            <li class = "key white"><span>h</span></li>
-            <li class = "key black"><span>u</span></li>
-            <li class = "key white"><span>j</span></li>
-            <li class = "key white"><span>k</span></li>
-            <li class = "key black"><span>o</span></li>
-            <li class = "key white"><span>l</span></li>
-            <li class = "key black"><span>p</span></li>
-            <li class = "key white"><span>;</span></li>
-
-
+            <li class="key white" data-key="a" data-note="C">
+                <span class="note">C</span>
+                <span class="key-label">a</span>
+            </li>
+            <li class="key black" data-key="w" data-note="C#">
+                <span class="note">C#</span>
+                <span class="key-label">w</span>
+            </li>
+            <li class="key white" data-key="s" data-note="D">
+                <span class="note">D</span>
+                <span class="key-label">s</span>
+            </li>
+            <li class="key black" data-key="e" data-note="D#">
+                <span class="note">D#</span>
+                <span class="key-label">e</span>
+            </li>
+            <li class="key white" data-key="d" data-note="E">
+                <span class="note">E</span>
+                <span class="key-label">d</span>
+            </li>
+            <li class="key white" data-key="f" data-note="F">
+                <span class="note">F</span>
+                <span class="key-label">f</span>
+            </li>
+            <li class="key black" data-key="t" data-note="F#">
+                <span class="note">F#</span>
+                <span class="key-label">t</span>
+            </li>
+            <li class="key white" data-key="g" data-note="G">
+                <span class="note">G</span>
+                <span class="key-label">g</span>
+            </li>
+            <li class="key black" data-key="y" data-note="G#">
+                <span class="note">G#</span>
+                <span class="key-label">y</span>
+            </li>
+            <li class="key white" data-key="h" data-note="A">
+                <span class="note">A</span>
+                <span class="key-label">h</span>
+            </li>
+            <li class="key black" data-key="u" data-note="A#">
+                <span class="note">A#</span>
+                <span class="key-label">u</span>
+            </li>
+            <li class="key white" data-key="j" data-note="B">
+                <span class="note">B</span>
+                <span class="key-label">j</span>
+            </li>
+            <li class="key white" data-key="k" data-note="C">
+                <span class="note">C</span>
+                <span class="key-label">k</span>
+            </li>
+            <li class="key black" data-key="o" data-note="C#">
+                <span class="note">C#</span>
+                <span class="key-label">o</span>
+            </li>
+            <li class="key white" data-key="l" data-note="D">
+                <span class="note">D</span>
+                <span class="key-label">l</span>
+            </li>
+            <li class="key black" data-key="p" data-note="D#">
+                <span class="note">D#</span>
+                <span class="key-label">p</span>
+            </li>
+            <li class="key white" data-key=";" data-note="E">
+                <span class="note">E</span>
+                <span class="key-label">;</span>
+            </li>
         </ul>
+        
     </div>
 
 
