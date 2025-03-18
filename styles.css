@@ -13,28 +13,6 @@ body {
     overflow: hidden;
 }
 
-body::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
-    opacity: 0.3;
-    animation: starsMove 50s linear infinite;
-    z-index: 1;
-}
-
-@keyframes starsMove {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-50%, -50%); }
-}
-
-.description, .wrapper {
-    position: relative;
-    z-index: 2;
-}
 
 .description {
     width: 100%;
